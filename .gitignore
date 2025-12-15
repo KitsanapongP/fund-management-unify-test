@@ -1,0 +1,15 @@
+# ละเว้น node_modules ทุกโฟลเดอร์ย่อย
+**/node_modules
+**/.npm
+**/dist
+**/build
+
+# ละเว้นไฟล์ Environment ทุกที่
+.env
+.env.local
+.env.*.local
+*.log
+
+# ละเว้นไฟล์ System
+.DS_Store
+Thumbs.db
