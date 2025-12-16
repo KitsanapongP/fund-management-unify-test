@@ -180,8 +180,8 @@ export default function Header({
         {/* Logo Section */}
         <div className="flex items-center gap-3">
           <div className={logoContainerClass}>{renderLogoContent()}</div>
-          <div className="relative min-w-0 pt-2">
-            <p className="absolute -top-1 left-0 text-2xl sm:text-3xl font-black text-red-600 leading-none">
+          <div className="relative min-w-0 pt-6">
+            <p className="absolute -top-2 left-0 text-2xl sm:text-3xl font-black text-red-600 leading-none">
               สำหรับทดสอบ
             </p>
             <h1 className="text-lg font-bold text-gray-800 sm:text-xl">

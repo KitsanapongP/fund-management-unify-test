@@ -125,8 +125,8 @@ export default function PublicHeader({
           <div className={logoContainerClass} style={containerStyle || undefined}>
             {renderLogoContent()}
           </div>
-          <div className="relative min-w-0 pt-2">
-            <p className="absolute -top-1 left-0 text-2xl sm:text-3xl font-black text-red-600 leading-none">
+          <div className="relative min-w-0 pt-6">
+            <p className="absolute -top-2 left-0 text-2xl sm:text-3xl font-black text-red-600 leading-none">
               สำหรับทดสอบ
             </p>
             <h1 className="text-lg sm:text-xl font-bold text-gray-800">
