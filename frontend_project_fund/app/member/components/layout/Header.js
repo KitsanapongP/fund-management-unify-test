@@ -176,27 +176,25 @@ export default function Header({
 
   return (
     <header className="fixed top-0 z-40 w-full border-b border-gray-200 bg-white/95 backdrop-blur">
-        <div className="flex items-start justify-between gap-3 px-4 py-3 sm:items-center sm:px-6">
-          {/* Logo Section */}
-          <div className="flex items-start gap-3 sm:items-center">
-            <div className="flex items-start gap-3 sm:items-center">
-              <div className={logoContainerClass}>{renderLogoContent()}</div>
-              <div className="min-w-0">
-                <p className="text-2xl font-extrabold text-red-600 leading-none">
-                  สำหรับทดสอบ
-                </p>
-                <h1 className="text-lg font-bold text-gray-800 sm:text-xl">
-                  {subtitles.member || "กองทุนวิจัยฯ วิทยาลัยการคอมพิวเตอร์"}
-                </h1>
-                <p className="text-sm text-gray-700 leading-tight">
-                  {appName || "Fund Management"}
-                </p>
-                <p className="mt-1 text-xs text-gray-500 truncate" title={currentPageTitle}>
-                  {currentPageTitle}
-                </p>
-              </div>
-            </div>
+      <div className="flex items-center justify-between gap-3 px-4 py-3 sm:px-6">
+        {/* Logo Section */}
+        <div className="flex items-center gap-3">
+          <div className={logoContainerClass}>{renderLogoContent()}</div>
+          <div className="relative min-w-0 pt-2">
+            <p className="absolute -top-1 left-0 text-2xl sm:text-3xl font-black text-red-600 leading-none">
+              สำหรับทดสอบ
+            </p>
+            <h1 className="text-lg font-bold text-gray-800 sm:text-xl">
+              {subtitles.member || "กองทุนวิจัยฯ วิทยาลัยการคอมพิวเตอร์"}
+            </h1>
+            <p className="text-sm text-gray-700 leading-tight">
+              {appName || "Fund Management"}
+            </p>
+            <p className="mt-1 text-xs text-gray-500 truncate" title={currentPageTitle}>
+              {currentPageTitle}
+            </p>
           </div>
+        </div>
 
         <div className="flex items-center gap-3">
           <button
